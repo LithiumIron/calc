@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+
+  margin: 0;
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+
+  background: white;
+  user-select:none;
+  
+  
+}
+
+.title-bar{
+  -webkit-app-region: drag;
+  height: 40px;
+  background: rgba(255, 192, 203, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: move;
+  
+  
+}
+
+.exit{
+  -webkit-app-region: no-drag;
+  background: rgba(255, 192, 203, 1);
+  border: none;
+  color: rgb(126, 61, 69);
+  font-size: 20px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  position: absolute;
+  top: 5px;
+  left: 250px;
+}
+
+.exit:hover{
+  background: rgba(255, 192, 203, 1);
+  color: rgb(255, 255, 255);
+}
+
+.minimize{
+  -webkit-app-region: no-drag;
+  background: rgba(255, 192, 203, 1);
+  border: none;
+  color: rgb(126, 61, 69);
+  font-size: 20px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  position: absolute;
+  top: 5px;
+  left: 210px;
+}
+
+.minimize:hover{
+  background: rgba(255, 192, 203, 1);
+  color: rgb(255, 255, 255);
+}
+
+.calculator {
+  
+  width: 400px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(asset/levi.jpg);
+  width: fit-content;
+}
+
+.keys{
+  
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+#display{
+  
+  width: 100%;
+  padding: 15px 0.2px;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 4px;
+  border-color: rgb(255, 216, 223);
+  background-color: rgb(255, 255, 255);
+  margin-top: 30px;
+}
+
+button{
+  
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(233, 162, 174);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+button:hover{
+  background-color: hsl(351, 77%, 95%);
+  color: hsl(0, 0%, 36%);
+}
+
+button:active{
+  background-color: hsl(345, 100%, 99%);
+  color: hsl(0, 0%, 54%);
+}
+
+.operator{
+  background-color: rgb(219, 114, 131);
+}
+
+.equal{
+  background-color: rgb(181, 47, 70);
+  color: white;
+}
+
+input{
+  color: black;
+  
+}
+textarea,
+select {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
